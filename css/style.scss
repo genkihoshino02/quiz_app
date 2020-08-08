@@ -1,0 +1,75 @@
+body{
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px;
+    
+
+    #start{
+        font-size: 150px;
+        margin: 100px;
+        padding: 20px 10px 30px 150px;
+        background-color:greenyellow;
+        cursor: pointer;
+    }
+    #quiz{
+        margin-top: 10px;
+    #qImage{
+        text-align: center;
+        img{
+        
+        width: 40%
+    }
+    }
+    #question{
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    #timer{
+        
+        margin: 30px;
+        #counter{
+            font-size: 20px;
+
+        }
+        #btimeGauge{
+            background-color: gray;
+            width: 150px;
+            height: 20px;
+            position: absolute;
+            z-index: 1;
+        }
+        #timeGauge{
+            z-index: 100;
+            position: relative;
+            width: 0px;
+            height: 20px;
+            background-color: lightgreen;
+        }
+    }
+    #choice{
+        .select{
+            text-align: center;
+            background-color: gray;
+            color: white;
+            padding: 5px;
+            margin-bottom: 5px;
+            &:hover{
+                background-color: rgb(248, 233, 233);
+                color: black;
+            }
+        }
+    }
+    #progress{
+        padding: 30px 100px;
+        text-align: right;
+        display: flex;
+        .prog{
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin-right: 10px;
+        }
+    }
+    }
+}

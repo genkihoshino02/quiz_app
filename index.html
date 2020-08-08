@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div id="start">Start Quiz</div>
+    <div id="quiz"  style="display:none" >
+        <div id="qImage"><img src="./img/bgimage.jpg" alt=""></div>
+        <div id="question"><p>Question</p></div>
+            <div id="timer">
+                <p>TIME</p>
+                <div id="counter"></div>
+                <div id="btimeGauge"></div>
+                <div id="timeGauge"></div>
+            </div>
+
+            <div id="choice">
+                <div class="select" id="choiceA" onclick="checkAnswer('A')"></div>
+                <div class="select" id="choiceB" onclick="checkAnswer('B')"></div>
+                <div class="select" id="choiceC" onclick="checkAnswer('C')"></div>
+            </div>
+            <div id="progress">
+               
+            </div>
+
+            <div id="socreContainer" style="display: none;">
+
+            </div>
+    </div>
+    <script src="./js/quiz.js"></script>
+</body>
+</html>
