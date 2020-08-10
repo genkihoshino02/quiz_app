@@ -107,7 +107,7 @@ function wrongAnswer(){
        document.getElementById(questionIndexDone).style.backgroundColor="red";
 }
 // 解答時間の表示
-const questionTime=10;
+const questionTime=5;
 const gaugeWidth=150;
 let count=0;
 const gaugeProgressUnit=gaugeWidth/questionTime;
@@ -134,9 +134,12 @@ function checkAnswer(answer){
        if(questions[questionIndexDone].answer==answer){
               score++;
               correctAnswer();
-              getQuiz()
+              questionIndexDone++;
+              getQuiz();
        }else{
               wrongAnswer();
+              questionIndexDone++;
+              getQuiz();
        }
        if(questions[questionIndexDone].length<lastQuestionIndex){
               getQuiz();

@@ -1,15 +1,31 @@
 body {
   padding: 0;
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 300px;
+  height: 100vh;
 }
 
 body #start {
-  font-size: 150px;
-  margin: 100px;
-  padding: 20px 10px 30px 150px;
+  font-size: 20px;
+  margin: 0px;
   background-color: greenyellow;
   cursor: pointer;
+  height: 40vh;
+  font-weight: 900;
+  font-family: 'Luckiest Guy', cursive;
+}
+
+body #start .red {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  margin-top: 100px;
+}
+
+body #start .blue {
+  background-color: blue;
+  width: 100px;
+  height: 200px;
 }
 
 body #quiz {
@@ -30,8 +46,13 @@ body #quiz #question {
   font-weight: bold;
 }
 
+body #quiz #question p {
+  margin: 10px;
+}
+
 body #quiz #timer {
-  margin: 30px;
+  margin: 10px;
+  padding-bottom: 20px;
 }
 
 body #quiz #timer #counter {
@@ -41,25 +62,37 @@ body #quiz #timer #counter {
 body #quiz #timer #btimeGauge {
   background-color: gray;
   width: 150px;
-  height: 20px;
+  height: 10px;
   position: absolute;
   z-index: 1;
+  margin: 0px;
 }
 
 body #quiz #timer #timeGauge {
+  margin: 0px;
   z-index: 100;
   position: relative;
   width: 0px;
-  height: 20px;
+  height: 10px;
   background-color: lightgreen;
+}
+
+body #quiz #timer .timeshow {
+  height: 10px;
+}
+
+body #quiz #timer .timeshow p {
+  margin: 0px;
 }
 
 body #quiz #choice .select {
   text-align: center;
   background-color: gray;
   color: white;
-  padding: 5px;
+  padding-top: 2px;
+  padding-bottom: 25px;
   margin-bottom: 5px;
+  height: 25px;
 }
 
 body #quiz #choice .select:hover {
@@ -68,14 +101,15 @@ body #quiz #choice .select:hover {
 }
 
 body #quiz #progress {
-  padding: 30px 100px;
+  padding: 10px 100px;
   text-align: right;
   display: flex;
 }
 
 body #quiz #progress .prog {
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 40px;
   margin-right: 10px;
+  border: solid 2px black;
 }

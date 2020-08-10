@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div id="start">Start Quiz</div>
+    <div id="start">Start Quiz<p class="red"> </p><p class="blue"></p></div>
     <div id="quiz"  style="display:none" >
         <div id="qImage"><img src="./img/bgimage.jpg" alt=""></div>
         <div id="question"><p>Question</p></div>
             <div id="timer">
-                <p>TIME</p>
-                <div id="counter"></div>
+                <div id="counter"></div> 
                 <div id="btimeGauge"></div>
-                <div id="timeGauge"></div>
+                <div id="timeGauge"></div><div class="timeshow" style="display:flex;">
+                    <p style="margin-right: 130px;">0</p>             <p>5</p>
+                </div>
             </div>
 
             <div id="choice">
